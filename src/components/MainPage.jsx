@@ -7,7 +7,7 @@ export default function MainPage() {
 
         return (
             <>
-                <NavbarWithMegaMenu />
+                {/* <NavbarWithMegaMenu /> */}
                 <div className="text-center pt-28">
                     <p className=" text-7xl inline-block text-transparent   font-bold mainheading mt-10 p-8 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ... bg-clip-text" >RX short URL & QR code generator</p>
                     <p className="text-2xl pt-10">A short link allows you to collect so much data<br />  about your customers & their behaviors.</p>
