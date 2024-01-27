@@ -1,4 +1,5 @@
-// import { useState } from "react";
+import { Typography } from "@material-tailwind/react";
+import { useState } from "react";
 // import React from "react";
 // import {
 //     Navbar,
@@ -245,10 +246,30 @@
 
 
 export default function NavbarWithMegaMenu() {
+
+  const [isOpen, setIsOpen] = useState(false);
+  // const dropDownOpen = () => {
+  //   let dropdownevent = document.querySelector(".dropdown")
+  //   dropdownevent.style.display = "block"
+
+  // }
+  // const dropDownClose = () => {
+  //   let dropdownevent = document.querySelector(".dropdown")
+  //   dropdownevent.style.display = "none"
+  // }
+
+
+
+
+
+
+
+
+
   return (
     <>
       <div className="">
-        <nav className=" p-4 text-white-500 flex space-x-24 align-middle justify-center items-center">
+        <nav className=" p-4 flex space-x-24 align-middle justify-center items-center">
 
           <div>
             <a href=""><img className="w-16 h-16" src="/logo.png" alt="" /></a></div>
@@ -256,23 +277,32 @@ export default function NavbarWithMegaMenu() {
             <ul className="flex space-x-10" >
               <li><a href="">Home</a></li>
               <li><a href="">Pricing</a> </li>
-              <li ><a href="">Solution</a> </li>
-              <ul >
-                <li><a href="">QR code</a></li>
-                <li><a href="">Bio Pages</a></li>
-                <li><a href="">Links</a></li>
-                <li><a href="">Links</a></li>
-              </ul>
+              <div onClick={() => setIsOpen(!isOpen)}  >
+                <li><a>Solution</a></li>
+                {isOpen && (
+                  <div className="dropdown ">
+                    <ul className=" absolute border-2  text-white-800 border-black grid rounded-md grid-cols-2 gap-4 p-2 mt-4" >
+                      <li> <a href="">QR code</a> <p>Lorem ipsum dolor sit <br />amet consectetur </p></li>
+                      <li><a href="">Bio Pages</a> <p>Lorem ipsum dolor sit <br />amet consectetur </p></li>
+                      <li><a href="">Links</a> <p>Lorem ipsum dolor sit <br />amet consectetur </p></li>
+                      <li><a href="">Links</a> <p>Lorem ipsum dolor sit <br />amet consectetur </p></li>
+                    </ul>
+                  </div>)}
+              </div>
               <li>  <a href="">About</a> </li>
             </ul>
 
 
 
           </div>
-          <div><button>Login</button></div>
+          <div><button className="text-white-700">Login</button></div>
 
 
         </nav >
-      </div ></>
+      </div >
+
+
+
+    </>
   )
 }
