@@ -2,6 +2,9 @@ import { useState } from 'react'
  import "./components/MainPage" 
 import './App.css'
 import MainPage from './components/MainPage'
+import Navbar from './components/Navbar'
+import Pricing from './components/Pricing'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -10,7 +13,9 @@ function App() {
   return (
     <>
        
-         <MainPage/>
+         <Navbar/>
+         <Pricing/>
+         <Footer/>
         
       
     </>
