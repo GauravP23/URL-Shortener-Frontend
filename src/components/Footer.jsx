@@ -1,8 +1,8 @@
 export default function Footer() {
 
     return (
-        <>
-            <div className="bg-purple-900 p-24  ">
+        < >
+            <div className="bg-purple-900 p-24  footer_img">
                 <div className=" m-auto grid grid-cols-2 text-start w-1/2 gap-16">
                     <div className="space-y-2"><p className="text-2xl text-start py-4">Brand</p><p className=" text-start">Looking for a way to shorten long URLs? Check out our short URL and QR code service! We can help you create shorter, more manageable URLs for easy sharing.</p>
                         <div className="flex justify-between  text-2xl">
