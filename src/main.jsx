@@ -19,7 +19,7 @@ import Login from './components/login.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     // <Route path="" element={<Layout/>} >
-    <Route path='' element={<Analytics />} />,
+    // <Route path='' element={<Analytics />} />,
     //  <Route path='about' element={<About />} />
     //  <Route path='Pricing'  element={<Pricing/>}/>
     /* <Route path='solution'  element={<Solution/>}/> */
