@@ -8,7 +8,7 @@ function Layout(){
   return(
     <>
     <NavbarWithMegaMenu/>
-    <Outlet/>
+    <Outlet />
     <Footer />
     </>
   )
