@@ -74,9 +74,13 @@ export default function MainPage() {
 
             <div className="text-center pt-28">
                 <p className=" text-7xl inline-block text-transparent   font-bold mainheading mt-10 p-8 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ... bg-clip-text" >RX short URL & QR code generator</p>
-                <p className="text-2xl pt-10">A short link allows you to collect so much data<br />  about your customers & their behaviors.</p>
+                
             </div>
-            <div className="text-center place-items-center  w-4/12 m-auto flex justify-center items-center relative pt-10 ">
+            <div className="between-container flex">
+                <div className="hand-1"></div>
+                <div className=" middle-container justify-center items-center">
+            <p className="text-2xl text-center pt-10">A short link allows you to collect so much data<br />  about your customers & their behaviors.</p>
+            <div className="text-center place-items-center  w-full m-auto flex justify-center items-center relative pt-10 ">
                 <input id="url" name="url" value={input.url} onChange={handleInputChange} className="  w-full rounded-3xl h-16 pl-4" type="text" placeholder="Enter the link here!" />
                 <button onClick={handleSubmit} className="absolute right-0 rounded-3xl h-16">Shorten Now!</button>
 
@@ -85,6 +89,10 @@ export default function MainPage() {
             <div className="text-center p-4">
                 <p>You can create <span className="text-pink-400">05</span> more links. Register  Now to enjoy Unlimited usage</p>
             </div>
+            </div>
+            <div className="hand-2"></div>
+            </div>
+            
 
             <div className="w-1/2 m-auto mt-16 p-8 border-2 border-purple-900 bg-blue-900 rounded-xl" >
                 <div className="flex justify-between">

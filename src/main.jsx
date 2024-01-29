@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
 import Layout from './Layout'
-
+import Login from './components/login.jsx';
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>} >
@@ -17,6 +17,7 @@ const router=createBrowserRouter(
      {/* <Route path='about' element={<About />} /> */}
      <Route path='Pricing'  element={<Pricing/>}/>
      {/* <Route path='solution'  element={<Solution/>}/> */}
+     <Route path='login'  element={<Login/>}/>
      <Route path='*' element={<div>Not Found</div>}/>  
     </Route>
   )
